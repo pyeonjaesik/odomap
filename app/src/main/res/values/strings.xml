@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Odomap</string>
+    <string name="app_name_ko">오도맵</string>
+    <string name="tagline">달린 길이 지도가 된다</string>
+
+    <!-- home -->
+    <string name="stat_driven">누적 달린 길</string>
+    <string name="stat_pioneered">처음 달린 길</string>
+    <string name="stat_drives">드라이브</string>
+    <string name="stat_net">내 지도</string>
+    <string name="unit_km">km</string>
+    <string name="unit_times">회</string>
+    <string name="km_value">%1$s km</string>
+    <string name="drives_value">%1$d회</string>
+    <string name="live_title">기록 중</string>
+    <string name="live_this_drive">이번 드라이브</string>
+    <string name="live_pioneered">처음 달린 길</string>
+    <string name="btn_drives">드라이브 기록</string>
+    <string name="btn_basemap_on">실제 지도 겹치기</string>
+    <string name="btn_basemap_off">종이 지도만</string>
+    <string name="btn_fit">내 지도 전체</string>
+    <string name="empty_map">아직 기록이 없어요. 시동을 걸고 달리면 지도가 그려집니다.</string>
+    <string name="permission_needed">주행을 자동으로 기록하려면 위치 권한이 필요해요.</string>
+    <string name="permission_grant">권한 허용</string>
+    <string name="logo_hint">로고를 길게 누르면 데모 메뉴</string>
+
+    <!-- driving (restricted) -->
+    <string name="driving_now">주행 중</string>
+    <string name="driving_hint">지도와 기록은 정차 후에 볼 수 있어요</string>
+
+    <!-- drive list / detail -->
+    <string name="drives_title">드라이브 기록</string>
+    <string name="drives_empty">아직 드라이브 기록이 없어요.</string>
+    <string name="drive_pick">왼쪽에서 드라이브를 고르세요.</string>
+    <string name="back">뒤로</string>
+    <string name="detail_distance">달린 거리</string>
+    <string name="detail_pioneered">처음 달린 길</string>
+    <string name="detail_time">주행 시간</string>
+    <string name="detail_repass">되돌아 달린 구간</string>
+    <string name="detail_ratio">처음 달린 비율</string>
+    <string name="minutes_value">%1$d분</string>
+    <string name="hours_minutes_value">%1$d시간 %2$d분</string>
+    <string name="percent_value">%1$d%%</string>
+    <string name="segments_value">%1$d곳</string>
+    <string name="legend_new">처음 달린 길</string>
+    <string name="legend_known">달려 본 길</string>
+
+    <!-- arrival -->
+    <string name="arrival_title">도착</string>
+    <string name="arrival_line">오늘 %1$skm 중 처음 달린 길 %2$skm</string>
+    <string name="arrival_none">오늘은 익숙한 길만 %1$skm 달렸어요</string>
+    <string name="arrival_ok">확인</string>
+    <string name="arrival_view">지도에서 보기</string>
+    <string name="tts_arrival">오늘 처음 달린 길 %1$s킬로미터</string>
+    <string name="tts_arrival_none">오늘은 익숙한 길만 달렸어요</string>
+
+    <!-- demo panel -->
+    <string name="demo_title">데모 / 개발자 메뉴</string>
+    <string name="demo_play_all">전체 순서대로 재생</string>
+    <string name="demo_stop">재생 멈춤</string>
+    <string name="demo_speed">재생 속도</string>
+    <string name="demo_override">데모 중 주행 화면 제한 풀기 (영상용)</string>
+    <string name="demo_reset">전체 삭제</string>
+    <string name="demo_reset_confirm">모든 드라이브와 지도를 지울까요? 되돌릴 수 없어요.</string>
+    <string name="demo_reset_yes">삭제</string>
+    <string name="demo_cancel">취소</string>
+    <string name="demo_close">닫기</string>
+    <string name="demo_playing">데모 재생 %1$d/%2$d · %3$s · %4$d×</string>
+    <string name="demo_source">입력: %1$s</string>
+    <string name="demo_minutes">%1$s km · %2$d분</string>
+
+    <!-- notification -->
+    <string name="notif_channel">주행 기록</string>
+    <string name="notif_idle">주행을 기다리는 중 — 기어를 D에 두면 기록을 시작해요</string>
+    <string name="notif_driving">이번 드라이브 %1$s km · 처음 달린 길 %2$s km</string>
+</resources>

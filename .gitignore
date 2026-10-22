@@ -1,0 +1,29 @@
+# Gradle / Android
+.gradle/
+build/
+*/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.log
+# IDE
+.idea/
+*.iml
+.DS_Store
+.kotlin/
+# tools (node)
+tools/node_modules/
+tools/build/
+# contest forms (personal info) and local submission bundle — never commit
+docs/form/
+submission/
+# regenerable demo route output (the app bundles its own copy in assets)
+tools/routes/out/
+# release APK for judges lives in apk/
+!apk/*.apk

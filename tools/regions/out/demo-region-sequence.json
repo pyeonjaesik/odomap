@@ -1,0 +1,1237 @@
+{
+ "rule": "loc 점마다 regions.json 폴리곤 판정(even-odd). 미판정 점은 직전 지역 유지. 새 지역은 30초 이상 연속 판정돼야 진입 확정(시각은 처음 들어간 점). 주행 시작 순 누적 firstVisit.",
+ "pointTests": [
+  {
+   "place": "서울 합정역",
+   "lat": 37.5495,
+   "lng": 126.9139,
+   "expect": "마포구",
+   "got": "서울특별시 마포구",
+   "ok": true
+  },
+  {
+   "place": "역삼역",
+   "lat": 37.5006,
+   "lng": 127.0366,
+   "expect": "강남구",
+   "got": "서울특별시 강남구",
+   "ok": true
+  },
+  {
+   "place": "남이섬 (routes NAMI 좌표)",
+   "lat": 37.7906,
+   "lng": 127.5258,
+   "expect": "춘천시",
+   "got": "강원특별자치도 춘천시",
+   "ok": true
+  },
+  {
+   "place": "가평역",
+   "lat": 37.8145,
+   "lng": 127.5106,
+   "expect": "가평군",
+   "got": "경기도 가평군",
+   "ok": true
+  },
+  {
+   "place": "강릉 경포",
+   "lat": 37.7519,
+   "lng": 128.8761,
+   "expect": "강릉시",
+   "got": "강원특별자치도 강릉시",
+   "ok": true
+  },
+  {
+   "place": "주문진항",
+   "lat": 37.8925,
+   "lng": 128.8215,
+   "expect": "강릉시",
+   "got": "강원특별자치도 강릉시",
+   "ok": true
+  },
+  {
+   "place": "양양 낙산",
+   "lat": 38.1245,
+   "lng": 128.6275,
+   "expect": "양양군",
+   "got": "강원특별자치도 양양군",
+   "ok": true
+  },
+  {
+   "place": "속초항",
+   "lat": 38.207,
+   "lng": 128.5918,
+   "expect": "속초시",
+   "got": "강원특별자치도 속초시",
+   "ok": true
+  },
+  {
+   "place": "제주공항",
+   "lat": 33.5104,
+   "lng": 126.4914,
+   "expect": "제주시",
+   "got": "제주특별자치도 제주시",
+   "ok": true
+  },
+  {
+   "place": "수원 화성행궁",
+   "lat": 37.2818,
+   "lng": 127.0135,
+   "expect": "수원시",
+   "got": "경기도 수원시",
+   "ok": true
+  },
+  {
+   "place": "서귀포 중문",
+   "lat": 33.2496,
+   "lng": 126.412,
+   "expect": "서귀포시",
+   "got": "제주특별자치도 서귀포시",
+   "ok": true
+  },
+  {
+   "place": "독도 동도",
+   "lat": 37.2408,
+   "lng": 131.8696,
+   "expect": "울릉군",
+   "got": "경상북도 울릉군",
+   "ok": true
+  },
+  {
+   "place": "광주 5·18 민주광장",
+   "lat": 35.1468,
+   "lng": 126.9197,
+   "expect": "동구",
+   "got": "전남광주통합특별시 동구",
+   "ok": true
+  },
+  {
+   "place": "인천공항",
+   "lat": 37.4602,
+   "lng": 126.4407,
+   "expect": "영종구",
+   "got": "인천광역시 영종구",
+   "ok": true
+  }
+ ],
+ "drives": [
+  {
+   "id": "commute-1-am",
+   "title": "출근 10/26",
+   "start": "2026-10-26T08:12:00+09:00",
+   "points": 2257,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1792969925000,
+     "time": "08:12:05",
+     "lat": 37.5494848,
+     "lng": 126.9139528,
+     "start": true,
+     "firstVisit": true
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1792970546000,
+     "time": "08:22:26",
+     "lat": 37.5410943,
+     "lng": 126.956945,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "11650",
+     "name": "서초구",
+     "label": "서울 서초구",
+     "full": "서울특별시 서초구",
+     "t": 1792971550000,
+     "time": "08:39:10",
+     "lat": 37.5270678,
+     "lng": 127.0127431,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1792972113000,
+     "time": "08:48:33",
+     "lat": 37.4979352,
+     "lng": 127.0277205,
+     "start": false,
+     "firstVisit": true
+    }
+   ]
+  },
+  {
+   "id": "commute-1-pm",
+   "title": "퇴근 10/26",
+   "start": "2026-10-26T19:03:00+09:00",
+   "points": 2041,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793008985000,
+     "time": "19:03:05",
+     "lat": 37.5005722,
+     "lng": 127.0365977,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793009508000,
+     "time": "19:11:48",
+     "lat": 37.5280809,
+     "lng": 127.0122193,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793010471000,
+     "time": "19:27:51",
+     "lat": 37.541254,
+     "lng": 126.9569739,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "commute-2-am",
+   "title": "출근 10/27",
+   "start": "2026-10-27T08:13:00+09:00",
+   "points": 2318,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793056385000,
+     "time": "08:13:05",
+     "lat": 37.5495006,
+     "lng": 126.9139694,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793057056000,
+     "time": "08:24:16",
+     "lat": 37.5411565,
+     "lng": 126.95699,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11650",
+     "name": "서초구",
+     "label": "서울 서초구",
+     "full": "서울특별시 서초구",
+     "t": 1793057923000,
+     "time": "08:38:43",
+     "lat": 37.5267265,
+     "lng": 127.0131654,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793058569000,
+     "time": "08:49:29",
+     "lat": 37.4979281,
+     "lng": 127.0277156,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "commute-2-pm",
+   "title": "퇴근 10/27",
+   "start": "2026-10-27T19:05:00+09:00",
+   "points": 2099,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793095505000,
+     "time": "19:05:05",
+     "lat": 37.5005857,
+     "lng": 127.0366009,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793096137000,
+     "time": "19:15:37",
+     "lat": 37.5281035,
+     "lng": 127.0122553,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793097052000,
+     "time": "19:30:52",
+     "lat": 37.5412175,
+     "lng": 126.9569037,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "commute-3-am",
+   "title": "출근 10/28",
+   "start": "2026-10-28T08:14:00+09:00",
+   "points": 2665,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793142845000,
+     "time": "08:14:05",
+     "lat": 37.5494911,
+     "lng": 126.9139442,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793143427000,
+     "time": "08:23:47",
+     "lat": 37.5338436,
+     "lng": 126.9448009,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11200",
+     "name": "성동구",
+     "label": "서울 성동구",
+     "full": "서울특별시 성동구",
+     "t": 1793144481000,
+     "time": "08:41:21",
+     "lat": 37.5376955,
+     "lng": 127.0168266,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793144870000,
+     "time": "08:47:50",
+     "lat": 37.5357581,
+     "lng": 127.0347323,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "commute-3-pm",
+   "title": "퇴근 10/28",
+   "start": "2026-10-28T19:07:00+09:00",
+   "points": 2526,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793182025000,
+     "time": "19:07:05",
+     "lat": 37.5005789,
+     "lng": 127.0366174,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11200",
+     "name": "성동구",
+     "label": "서울 성동구",
+     "full": "서울특별시 성동구",
+     "t": 1793182642000,
+     "time": "19:17:22",
+     "lat": 37.5358279,
+     "lng": 127.034873,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793183027000,
+     "time": "19:23:47",
+     "lat": 37.5377126,
+     "lng": 127.0166408,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793184016000,
+     "time": "19:40:16",
+     "lat": 37.5343693,
+     "lng": 126.9447737,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "commute-4-am",
+   "title": "출근 10/29",
+   "start": "2026-10-29T08:15:00+09:00",
+   "points": 2226,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793229305000,
+     "time": "08:15:05",
+     "lat": 37.5494936,
+     "lng": 126.9139458,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793230005000,
+     "time": "08:26:45",
+     "lat": 37.5410977,
+     "lng": 126.9569547,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11650",
+     "name": "서초구",
+     "label": "서울 서초구",
+     "full": "서울특별시 서초구",
+     "t": 1793230816000,
+     "time": "08:40:16",
+     "lat": 37.5266468,
+     "lng": 127.0132303,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793231463000,
+     "time": "08:51:03",
+     "lat": 37.4978985,
+     "lng": 127.0277598,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "commute-4-pm",
+   "title": "퇴근 10/29",
+   "start": "2026-10-29T19:09:00+09:00",
+   "points": 2071,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793268545000,
+     "time": "19:09:05",
+     "lat": 37.5006057,
+     "lng": 127.0366159,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793269279000,
+     "time": "19:21:19",
+     "lat": 37.5280688,
+     "lng": 127.0122046,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793270069000,
+     "time": "19:34:29",
+     "lat": 37.5412742,
+     "lng": 126.9569237,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "commute-5-am",
+   "title": "출근 10/30",
+   "start": "2026-10-30T08:16:00+09:00",
+   "points": 2271,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793315765000,
+     "time": "08:16:05",
+     "lat": 37.5494793,
+     "lng": 126.9139829,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793316438000,
+     "time": "08:27:18",
+     "lat": 37.541162,
+     "lng": 126.9570199,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793317311000,
+     "time": "08:41:51",
+     "lat": 37.5279153,
+     "lng": 127.0121726,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11650",
+     "name": "서초구",
+     "label": "서울 서초구",
+     "full": "서울특별시 서초구",
+     "t": 1793317383000,
+     "time": "08:43:03",
+     "lat": 37.526469,
+     "lng": 127.0134538,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793317912000,
+     "time": "08:51:52",
+     "lat": 37.4979174,
+     "lng": 127.027759,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "commute-5-pm",
+   "title": "퇴근 10/30",
+   "start": "2026-10-30T19:11:00+09:00",
+   "points": 2032,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11680",
+     "name": "강남구",
+     "label": "서울 강남구",
+     "full": "서울특별시 강남구",
+     "t": 1793355065000,
+     "time": "19:11:05",
+     "lat": 37.5006029,
+     "lng": 127.0366144,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1793355635000,
+     "time": "19:20:35",
+     "lat": 37.5280902,
+     "lng": 127.0121762,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793356555000,
+     "time": "19:35:55",
+     "lat": 37.5412158,
+     "lng": 126.9569155,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "weekend-gapyeong",
+   "title": "주말 드라이브 · 가평",
+   "start": "2026-10-31T09:40:00+09:00",
+   "points": 5773,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793407205000,
+     "time": "09:40:05",
+     "lat": 37.5495051,
+     "lng": 126.9139282,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11410",
+     "name": "서대문구",
+     "label": "서울 서대문구",
+     "full": "서울특별시 서대문구",
+     "t": 1793407497000,
+     "time": "09:44:57",
+     "lat": 37.5589751,
+     "lng": 126.9617181,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "11110",
+     "name": "종로구",
+     "label": "서울 종로구",
+     "full": "서울특별시 종로구",
+     "t": 1793407577000,
+     "time": "09:46:17",
+     "lat": 37.5682976,
+     "lng": 126.9693208,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "11290",
+     "name": "성북구",
+     "label": "서울 성북구",
+     "full": "서울특별시 성북구",
+     "t": 1793408036000,
+     "time": "09:53:56",
+     "lat": 37.587763,
+     "lng": 127.0044818,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "11350",
+     "name": "노원구",
+     "label": "서울 노원구",
+     "full": "서울특별시 노원구",
+     "t": 1793408506000,
+     "time": "10:01:46",
+     "lat": 37.6162261,
+     "lng": 127.0713229,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "41310",
+     "name": "구리시",
+     "label": "경기 구리시",
+     "full": "경기도 구리시",
+     "t": 1793409017000,
+     "time": "10:10:17",
+     "lat": 37.6409407,
+     "lng": 127.1117554,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "41360",
+     "name": "남양주시",
+     "label": "경기 남양주시",
+     "full": "경기도 남양주시",
+     "t": 1793409296000,
+     "time": "10:14:56",
+     "lat": 37.6392315,
+     "lng": 127.1502531,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "41820",
+     "name": "가평군",
+     "label": "경기 가평군",
+     "full": "경기도 가평군",
+     "t": 1793410788000,
+     "time": "10:39:48",
+     "lat": 37.6772494,
+     "lng": 127.37561,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "51110",
+     "name": "춘천시",
+     "label": "강원 춘천시",
+     "full": "강원특별자치도 춘천시",
+     "t": 1793412404000,
+     "time": "11:06:44",
+     "lat": 37.8270092,
+     "lng": 127.524629,
+     "start": false,
+     "firstVisit": true
+    }
+   ]
+  },
+  {
+   "id": "weekend-gapyeong-back",
+   "title": "가평에서 돌아오는 길",
+   "start": "2026-10-31T17:20:00+09:00",
+   "points": 6036,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "51110",
+     "name": "춘천시",
+     "label": "강원 춘천시",
+     "full": "강원특별자치도 춘천시",
+     "t": 1793434805000,
+     "time": "17:20:05",
+     "lat": 37.7912838,
+     "lng": 127.5305334,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "41820",
+     "name": "가평군",
+     "label": "경기 가평군",
+     "full": "경기도 가평군",
+     "t": 1793435532000,
+     "time": "17:32:12",
+     "lat": 37.8270482,
+     "lng": 127.5244946,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "41360",
+     "name": "남양주시",
+     "label": "경기 남양주시",
+     "full": "경기도 남양주시",
+     "t": 1793437336000,
+     "time": "18:02:16",
+     "lat": 37.6772375,
+     "lng": 127.3754764,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "41310",
+     "name": "구리시",
+     "label": "경기 구리시",
+     "full": "경기도 구리시",
+     "t": 1793438750000,
+     "time": "18:25:50",
+     "lat": 37.6393962,
+     "lng": 127.1502538,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11350",
+     "name": "노원구",
+     "label": "서울 노원구",
+     "full": "서울특별시 노원구",
+     "t": 1793439051000,
+     "time": "18:30:51",
+     "lat": 37.6411683,
+     "lng": 127.1116173,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11290",
+     "name": "성북구",
+     "label": "서울 성북구",
+     "full": "서울특별시 성북구",
+     "t": 1793439587000,
+     "time": "18:39:47",
+     "lat": 37.6143217,
+     "lng": 127.063403,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11110",
+     "name": "종로구",
+     "label": "서울 종로구",
+     "full": "서울특별시 종로구",
+     "t": 1793440169000,
+     "time": "18:49:29",
+     "lat": 37.5876938,
+     "lng": 127.0040868,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11410",
+     "name": "서대문구",
+     "label": "서울 서대문구",
+     "full": "서울특별시 서대문구",
+     "t": 1793440595000,
+     "time": "18:56:35",
+     "lat": 37.5658817,
+     "lng": 126.966671,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1793440958000,
+     "time": "19:02:38",
+     "lat": 37.5587893,
+     "lng": 126.9268248,
+     "start": false,
+     "firstVisit": false
+    }
+   ]
+  },
+  {
+   "id": "trip-gangneung",
+   "title": "강릉 여행",
+   "start": "2026-11-07T07:30:00+09:00",
+   "points": 12006,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "11440",
+     "name": "마포구",
+     "label": "서울 마포구",
+     "full": "서울특별시 마포구",
+     "t": 1794004205000,
+     "time": "07:30:05",
+     "lat": 37.549471,
+     "lng": 126.9139307,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "11170",
+     "name": "용산구",
+     "label": "서울 용산구",
+     "full": "서울특별시 용산구",
+     "t": 1794004604000,
+     "time": "07:36:44",
+     "lat": 37.5338069,
+     "lng": 126.944832,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "11650",
+     "name": "서초구",
+     "label": "서울 서초구",
+     "full": "서울특별시 서초구",
+     "t": 1794005140000,
+     "time": "07:45:40",
+     "lat": 37.5156143,
+     "lng": 126.9959413,
+     "start": false,
+     "firstVisit": false
+    },
+    {
+     "code": "41130",
+     "name": "성남시",
+     "label": "경기 성남시",
+     "full": "경기도 성남시",
+     "t": 1794005871000,
+     "time": "07:57:51",
+     "lat": 37.4301223,
+     "lng": 127.069906,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "41610",
+     "name": "광주시",
+     "label": "경기 광주시",
+     "full": "경기도 광주시",
+     "t": 1794006742000,
+     "time": "08:12:22",
+     "lat": 37.4092017,
+     "lng": 127.1773008,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "41670",
+     "name": "여주시",
+     "label": "경기 여주시",
+     "full": "경기도 여주시",
+     "t": 1794008060000,
+     "time": "08:34:20",
+     "lat": 37.3795723,
+     "lng": 127.4446664,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "41830",
+     "name": "양평군",
+     "label": "경기 양평군",
+     "full": "경기도 양평군",
+     "t": 1794009249000,
+     "time": "08:54:09",
+     "lat": 37.3996846,
+     "lng": 127.7149906,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "51130",
+     "name": "원주시",
+     "label": "강원 원주시",
+     "full": "강원특별자치도 원주시",
+     "t": 1794009572000,
+     "time": "08:59:32",
+     "lat": 37.4030511,
+     "lng": 127.7878415,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "51730",
+     "name": "횡성군",
+     "label": "강원 횡성군",
+     "full": "강원특별자치도 횡성군",
+     "t": 1794010885000,
+     "time": "09:21:25",
+     "lat": 37.4474716,
+     "lng": 128.0389717,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "51760",
+     "name": "평창군",
+     "label": "강원 평창군",
+     "full": "강원특별자치도 평창군",
+     "t": 1794012411000,
+     "time": "09:46:51",
+     "lat": 37.5390858,
+     "lng": 128.3007982,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "51150",
+     "name": "강릉시",
+     "label": "강원 강릉시",
+     "full": "강원특별자치도 강릉시",
+     "t": 1794014675000,
+     "time": "10:24:35",
+     "lat": 37.6632228,
+     "lng": 128.7454619,
+     "start": false,
+     "firstVisit": true
+    }
+   ]
+  },
+  {
+   "id": "trip-coast",
+   "title": "동해안 해안도로",
+   "start": "2026-11-07T14:10:00+09:00",
+   "points": 5523,
+   "unclassifiedPoints": 0,
+   "regions": [
+    {
+     "code": "51150",
+     "name": "강릉시",
+     "label": "강원 강릉시",
+     "full": "강원특별자치도 강릉시",
+     "t": 1794028205000,
+     "time": "14:10:05",
+     "lat": 37.7518847,
+     "lng": 128.8763185,
+     "start": true,
+     "firstVisit": false
+    },
+    {
+     "code": "51830",
+     "name": "양양군",
+     "label": "강원 양양군",
+     "full": "강원특별자치도 양양군",
+     "t": 1794029666000,
+     "time": "14:34:26",
+     "lat": 37.9172996,
+     "lng": 128.8083299,
+     "start": false,
+     "firstVisit": true
+    },
+    {
+     "code": "51210",
+     "name": "속초시",
+     "label": "강원 속초시",
+     "full": "강원특별자치도 속초시",
+     "t": 1794033172000,
+     "time": "15:32:52",
+     "lat": 38.1611163,
+     "lng": 128.6081812,
+     "start": false,
+     "firstVisit": true
+    }
+   ]
+  }
+ ],
+ "firstVisitsInOrder": [
+  {
+   "code": "11440",
+   "label": "서울 마포구",
+   "full": "서울특별시 마포구",
+   "drive": "commute-1-am",
+   "time": "08:12:05"
+  },
+  {
+   "code": "11170",
+   "label": "서울 용산구",
+   "full": "서울특별시 용산구",
+   "drive": "commute-1-am",
+   "time": "08:22:26"
+  },
+  {
+   "code": "11650",
+   "label": "서울 서초구",
+   "full": "서울특별시 서초구",
+   "drive": "commute-1-am",
+   "time": "08:39:10"
+  },
+  {
+   "code": "11680",
+   "label": "서울 강남구",
+   "full": "서울특별시 강남구",
+   "drive": "commute-1-am",
+   "time": "08:48:33"
+  },
+  {
+   "code": "11200",
+   "label": "서울 성동구",
+   "full": "서울특별시 성동구",
+   "drive": "commute-3-am",
+   "time": "08:41:21"
+  },
+  {
+   "code": "11410",
+   "label": "서울 서대문구",
+   "full": "서울특별시 서대문구",
+   "drive": "weekend-gapyeong",
+   "time": "09:44:57"
+  },
+  {
+   "code": "11110",
+   "label": "서울 종로구",
+   "full": "서울특별시 종로구",
+   "drive": "weekend-gapyeong",
+   "time": "09:46:17"
+  },
+  {
+   "code": "11290",
+   "label": "서울 성북구",
+   "full": "서울특별시 성북구",
+   "drive": "weekend-gapyeong",
+   "time": "09:53:56"
+  },
+  {
+   "code": "11350",
+   "label": "서울 노원구",
+   "full": "서울특별시 노원구",
+   "drive": "weekend-gapyeong",
+   "time": "10:01:46"
+  },
+  {
+   "code": "41310",
+   "label": "경기 구리시",
+   "full": "경기도 구리시",
+   "drive": "weekend-gapyeong",
+   "time": "10:10:17"
+  },
+  {
+   "code": "41360",
+   "label": "경기 남양주시",
+   "full": "경기도 남양주시",
+   "drive": "weekend-gapyeong",
+   "time": "10:14:56"
+  },
+  {
+   "code": "41820",
+   "label": "경기 가평군",
+   "full": "경기도 가평군",
+   "drive": "weekend-gapyeong",
+   "time": "10:39:48"
+  },
+  {
+   "code": "51110",
+   "label": "강원 춘천시",
+   "full": "강원특별자치도 춘천시",
+   "drive": "weekend-gapyeong",
+   "time": "11:06:44"
+  },
+  {
+   "code": "41130",
+   "label": "경기 성남시",
+   "full": "경기도 성남시",
+   "drive": "trip-gangneung",
+   "time": "07:57:51"
+  },
+  {
+   "code": "41610",
+   "label": "경기 광주시",
+   "full": "경기도 광주시",
+   "drive": "trip-gangneung",
+   "time": "08:12:22"
+  },
+  {
+   "code": "41670",
+   "label": "경기 여주시",
+   "full": "경기도 여주시",
+   "drive": "trip-gangneung",
+   "time": "08:34:20"
+  },
+  {
+   "code": "41830",
+   "label": "경기 양평군",
+   "full": "경기도 양평군",
+   "drive": "trip-gangneung",
+   "time": "08:54:09"
+  },
+  {
+   "code": "51130",
+   "label": "강원 원주시",
+   "full": "강원특별자치도 원주시",
+   "drive": "trip-gangneung",
+   "time": "08:59:32"
+  },
+  {
+   "code": "51730",
+   "label": "강원 횡성군",
+   "full": "강원특별자치도 횡성군",
+   "drive": "trip-gangneung",
+   "time": "09:21:25"
+  },
+  {
+   "code": "51760",
+   "label": "강원 평창군",
+   "full": "강원특별자치도 평창군",
+   "drive": "trip-gangneung",
+   "time": "09:46:51"
+  },
+  {
+   "code": "51150",
+   "label": "강원 강릉시",
+   "full": "강원특별자치도 강릉시",
+   "drive": "trip-gangneung",
+   "time": "10:24:35"
+  },
+  {
+   "code": "51830",
+   "label": "강원 양양군",
+   "full": "강원특별자치도 양양군",
+   "drive": "trip-coast",
+   "time": "14:34:26"
+  },
+  {
+   "code": "51210",
+   "label": "강원 속초시",
+   "full": "강원특별자치도 속초시",
+   "drive": "trip-coast",
+   "time": "15:32:52"
+  }
+ ],
+ "totalDistinct": 23
+}

@@ -1,0 +1,4 @@
+# 원자료 다운로드(약 35 MB) — build_regions.py 가 자동으로 받는다
+raw/
+node_modules/
+__pycache__/

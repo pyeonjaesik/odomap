@@ -1,0 +1,11 @@
+{
+  "name": "odomap-tools",
+  "private": true,
+  "description": "Golden-fixture generator: runs the original TS explore algorithm (copied from clientApp) and dumps JSON for the Kotlin parity tests.",
+  "scripts": {
+    "golden": "esbuild gen-golden.ts --bundle --platform=node --format=cjs --outfile=build/gen-golden.cjs && node build/gen-golden.cjs ../core/src/test/resources/golden"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.2"
+  }
+}
